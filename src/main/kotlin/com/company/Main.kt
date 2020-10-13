@@ -8,5 +8,4 @@ fun main(){
     val connectionString = File("ConnectionString.txt").readLines()[0]
     val database = Mongodb(connectionString)
     val instancia = Server(database)
-
 }
