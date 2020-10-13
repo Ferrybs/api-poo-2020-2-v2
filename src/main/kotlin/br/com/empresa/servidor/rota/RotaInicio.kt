@@ -1,6 +1,7 @@
 package br.com.empresa.servidor.rota
 
 import br.com.empresa.cargo.User
+import br.com.empresa.database.management.UserManagement
 import br.com.empresa.servidor.AuthJwt
 import com.mongodb.client.MongoDatabase
 import io.ktor.application.*
@@ -21,7 +22,8 @@ open class RotaInicio{
             post("/register") {
                 val post = call.receiveOrNull<User>()
                 if (post !=null){
-                    val col = database.getCollection<User>()
+                    val management = UserManagement(database)
+                    management.cUser(post)
                     call.respond(mapOf("token" to authJwt.assinar(post.user.toString())))
                 }
             }
