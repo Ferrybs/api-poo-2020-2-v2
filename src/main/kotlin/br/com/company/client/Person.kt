@@ -1,4 +1,4 @@
-package br.com.empresa.cliente
+package br.com.company.client
 
 open class Person(
         var name: String? = null,

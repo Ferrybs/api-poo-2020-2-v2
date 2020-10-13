@@ -1,12 +1,12 @@
-package br.com.empresa
+package br.com.company
 
-import br.com.empresa.database.Mongodb
-import br.com.empresa.servidor.Servidor
+import br.com.company.database.Mongodb
+import br.com.company.server.Server
 import java.io.File
 
 fun main(){
     val connectionString = File("ConnectionString.txt").readLines()[0]
     val database = Mongodb(connectionString)
-    val instancia = Servidor(database)
+    val instancia = Server(database)
 
 }

@@ -1,6 +1,6 @@
-package br.com.empresa.cargo
+package br.com.company.role
 
-import br.com.empresa.cliente.Person
+import br.com.company.client.Person
 
 class User(
         var user: String? = null,

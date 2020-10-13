@@ -1,6 +1,6 @@
-package br.com.empresa.database.management
+package br.com.company.database.management
 
-import br.com.empresa.cargo.User
+import br.com.company.role.User
 import com.mongodb.client.MongoDatabase
 import org.litote.kmongo.*
 

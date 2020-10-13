@@ -1,18 +1,16 @@
-package br.com.empresa.servidor.rota
+package br.com.company.server.route
 
-import br.com.empresa.cargo.User
-import br.com.empresa.database.management.UserManagement
-import br.com.empresa.servidor.AuthJwt
+import br.com.company.role.User
+import br.com.company.database.management.UserManagement
+import br.com.company.server.AuthJwt
 import com.mongodb.client.MongoDatabase
 import io.ktor.application.*
 import io.ktor.request.*
 import io.ktor.response.*
 import io.ktor.routing.*
-import org.litote.kmongo.KMongo
-import org.litote.kmongo.getCollection
 
 
-open class RotaInicio{
+open class StartingRoute{
 
     fun Application.inicio(database: MongoDatabase,authJwt: AuthJwt){
         routing {
@@ -24,7 +22,7 @@ open class RotaInicio{
                 if (post !=null){
                     val management = UserManagement(database)
                     management.cUser(post)
-                    call.respond(mapOf("token" to authJwt.assinar(post.user.toString())))
+                    call.respond(mapOf("token" to authJwt.sign(post.user.toString())))
                 }
             }
 
