@@ -1,4 +1,4 @@
-package br.com.company.database.management
+package com.company.database.management
 
 import com.mongodb.client.MongoDatabase
 

@@ -1,4 +1,4 @@
-package br.com.company.server
+package com.company.server
 
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm

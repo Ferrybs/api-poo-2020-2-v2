@@ -1,6 +1,6 @@
-package br.com.company.database.management
+package com.company.database.management
 
-import br.com.company.role.User
+import com.company.role.User
 import com.mongodb.client.MongoDatabase
 import org.litote.kmongo.*
 

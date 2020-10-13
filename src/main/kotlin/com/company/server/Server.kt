@@ -1,8 +1,8 @@
-package br.com.company.server
+package com.company.server
 
-import br.com.company.database.Mongodb
-import br.com.company.notification.InvalidCredential
-import br.com.company.server.route.StartingRoute
+import com.company.database.Mongodb
+import com.company.notification.InvalidCredential
+import com.company.server.route.StartingRoute
 import io.ktor.application.*
 import io.ktor.auth.*
 import io.ktor.auth.jwt.*

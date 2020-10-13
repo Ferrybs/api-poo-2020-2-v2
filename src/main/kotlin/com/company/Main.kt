@@ -1,7 +1,7 @@
-package br.com.company
+package com.company
 
-import br.com.company.database.Mongodb
-import br.com.company.server.Server
+import com.company.database.Mongodb
+import com.company.server.Server
 import java.io.File
 
 fun main(){

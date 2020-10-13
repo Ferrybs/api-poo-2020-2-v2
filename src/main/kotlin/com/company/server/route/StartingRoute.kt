@@ -1,8 +1,8 @@
-package br.com.company.server.route
+package com.company.server.route
 
-import br.com.company.role.User
-import br.com.company.database.management.UserManagement
-import br.com.company.server.AuthJwt
+import com.company.role.User
+import com.company.database.management.UserManagement
+import com.company.server.AuthJwt
 import com.mongodb.client.MongoDatabase
 import io.ktor.application.*
 import io.ktor.request.*

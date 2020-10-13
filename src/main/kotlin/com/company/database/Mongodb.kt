@@ -1,4 +1,4 @@
-package br.com.company.database
+package com.company.database
 
 import org.litote.kmongo.*
 
