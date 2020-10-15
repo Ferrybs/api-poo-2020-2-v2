@@ -1,1 +1,0 @@
-mongodb+srv://admin:proIvbwtemnYsvAm@database.hwxyu.gcp.mongodb.net/apiPoo2020?retryWrites=true&w=majority
