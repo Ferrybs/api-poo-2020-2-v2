@@ -1,5 +1,7 @@
 package com.company.server.netty
 
+import com.company.auth.AuthInterface
+import com.company.auth.AuthJwt
 import com.company.database.DBInterface
 import com.company.server.ServerInterface
 import io.ktor.server.engine.*
@@ -7,9 +9,9 @@ import io.ktor.server.netty.*
 
 
 class NettyServer(
-        secret: String,
+        authInterface: AuthInterface,
         dbInterface: DBInterface
-) : ServerInterface, NettyEnv(secret,dbInterface) {
+) : ServerInterface, NettyEnv(authInterface,dbInterface) {
 
     val server = embeddedServer(Netty, env)
 

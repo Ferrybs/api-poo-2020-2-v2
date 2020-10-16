@@ -1,4 +1,4 @@
-package com.company.notification
+package com.company.notification.exception
 
 import java.lang.RuntimeException
 

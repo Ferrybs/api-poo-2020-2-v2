@@ -10,4 +10,7 @@ class AuthJwt(
     val verifier = JWT.require(algorithm).build()
 
     override fun sign(pass: String): String = JWT.create().withClaim("pass",pass).sign(algorithm)
+    override fun rSecret(): String {
+        return secret
+    }
 }

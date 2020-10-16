@@ -3,7 +3,7 @@ package com.company.account
 import com.company.role.User
 import org.hashids.Hashids
 
-class AdminAccount: Account(){
+class AdminAccount : Account(){
     private val idAdminAccount: String = this.cId()
 
     private fun cId(): String{
